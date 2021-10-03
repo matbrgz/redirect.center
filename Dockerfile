@@ -20,7 +20,7 @@ RUN groupadd -g 999 appuser && \
     chown -R appuser:appuser /home/appuser
 USER appuser
 
-ENV PORT 3000
-EXPOSE 3000
+ENV PORT 80
+EXPOSE 80
 CMD [ "pm2-runtime", "src/index.js" ]
 
